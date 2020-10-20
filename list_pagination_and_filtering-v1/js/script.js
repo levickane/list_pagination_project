@@ -55,8 +55,8 @@ const appendPageLinks = (list, page) => {
       </li>`
       ulRef.insertAdjacentHTML("beforeend", liItem)
       document.querySelector(`div.pagination ul li:nth-child(${i})`).addEventListener('click', () => {
-         showPage(data, i)
-         appendPageLinks(data, i)
+         showPage(filterData, i)
+         appendPageLinks(filterData, i)
       })
 
    }
